@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp | Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button type="button" class="btn" onclick="toggleBtn()"><span id="circle"></span></button>
+    <img src="images/lamp.png" alt="lamp">
+    <img src="images/light.png" alt="light" id="light" class="light">
+  </div>
+  <script>
+    var tgBtn=document.getElementById("circle");
+    var onlt=document.getElementById("light");
+    function toggleBtn(){
+      tgBtn.classList.toggle("etc");
+      onlt.classList.toggle("onlight");
+    }
+  </script>
+</body>
+</html>
